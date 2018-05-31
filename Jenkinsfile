@@ -4,7 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'dir'
-		bar 'cd'
                 bat 'echo "hello"'
             }
         }
