@@ -1,11 +1,5 @@
 pipeline {
     agent any
-    options([
-    pipelineTriggers([
-        // this is a timer trigger you may adjust the cron expression to your needs
-        [cron('45 15 * * *')]
-    ])
-    ])
     stages {
         stage('Pylint/PEP8 Analysis') {
             steps {
